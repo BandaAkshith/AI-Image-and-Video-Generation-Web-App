@@ -137,11 +137,6 @@ If you are having issues sending email notifications, make sure:
 
 ---
 
-## License:
-This project is open-source and available under the MIT License.
-
----
-
 ### **Conclusion:**
 This app demonstrates a basic AI-powered content generation system that can generate images and videos based on text prompts. It uses Hugging Face's Stable Diffusion for images, Pika for video generation, and Flask for the web framework, with email notifications to alert users when their content is ready. The project also integrates an SQLite database to track content history.
 
