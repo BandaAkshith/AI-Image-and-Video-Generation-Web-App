@@ -1,7 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from .models import Content, db  # Relative import for models.py
-# Relative import for utils.py
-from .utils import generate_images, generate_videos, notify_user
+from .utils import generate_images, generate_videos, notify_user # Relative import for utils.py
 
 import sys
 print(sys.path)
