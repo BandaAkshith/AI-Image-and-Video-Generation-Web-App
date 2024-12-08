@@ -11,7 +11,6 @@ migrate = Migrate()
 
 
 def create_app():
-    # Set the absolute path to the content.db file
     db_path = os.path.join(os.path.abspath(
         os.path.dirname(__file__)), 'content.db')
 
