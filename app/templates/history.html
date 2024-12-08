@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Content History</title>
+  </head>
+  <body>
+    <h1>Content History</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Prompt</th>
+          <th>Images</th>
+          <th>Videos</th>
+          <th>Status</th>
+          <th>Generated At</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for content in contents %}
+        <tr>
+          <td>{{ content.user_id }}</td>
+          <td>{{ content.prompt }}</td>
+          <td>{{ content.image_paths }}</td>
+          <td>{{ content.video_paths }}</td>
+          <td>{{ content.status }}</td>
+          <td>{{ content.generated_at }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Content Generator</title>
+  </head>
+  <body>
+    <h1>Generate Content</h1>
+    <form action="{{ url_for('main.generate') }}" method="POST">
+      <label for="user_id">User ID:</label>
+      <input type="text" name="user_id" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" required />
+      <br />
+      <label for="prompt">Prompt:</label>
+      <textarea name="prompt" required></textarea>
+      <br />
+      <button type="submit">Generate</button>
+    </form>
+  </body>
+</html>
